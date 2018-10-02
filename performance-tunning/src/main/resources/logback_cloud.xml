@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+      <providers>
+        <timestamp/>
+        <pattern>
+          <pattern>
+            {
+              "@hostname": "${HOSTNAME}",
+              "@vertical": "mms odin",
+              "@type":     "service",
+              "@service-name":    "odin-controller-${environment}",
+              "@service-version": "1.1",
+              "@trace-id":        "%X{traceId}",
+              "@correlation-id":  "%X{correlationId}",
+              "@retention":       "service",
+              "thread":    "%thread",
+              "logger":    "%logger",
+              "log-level": "%level",
+              "message":   "%message  %exception",
+              "@odin_duration":   "#asDouble{%X{duration}}"
+            }
+          </pattern>
+        </pattern>
+      </providers>
+    </encoder>
+  </appender>
+   <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	<file>/data/simpleRest.log</file>
+    	<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+    		<Pattern>- %msg%n    %d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger %n </Pattern>
+    	</encoder>
+    	<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>logfile-%i.log.gz</FileNamePattern>
+            <MinIndex>1</MinIndex>
+            <MaxIndex>10</MaxIndex>
+        </rollingPolicy>
+    	<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>100MB</MaxFileSize>
+        </triggeringPolicy>
+  </appender> 
+  <root level="INFO">
+    <appender-ref ref="STDOUT"/>
+    <appender-ref ref="FILE"/>
+  </root>
+</configuration>

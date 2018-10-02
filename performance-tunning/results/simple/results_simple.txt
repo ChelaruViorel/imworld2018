@@ -1,0 +1,1 @@
+network latency to cassandra node is 80ms (just ping it).

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="performance-tunning/perftune.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/performance-tunning/perftune.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="true" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <folder path="/performance-tunning/results"/>
+        <javaElement handleIdentifier="=performance-tunning/src\/main\/java"/>
+        <file path="/performance-tunning/.project"/>
+        <javaElement handleIdentifier="=performance-tunning/src\/test\/java"/>
+        <folder path="/performance-tunning/target"/>
+        <file path="/performance-tunning/pom.xml"/>
+        <folder path="/performance-tunning/src"/>
+        <file path="/performance-tunning/.classpath"/>
+    </selectedElements>
+</jardesc>
