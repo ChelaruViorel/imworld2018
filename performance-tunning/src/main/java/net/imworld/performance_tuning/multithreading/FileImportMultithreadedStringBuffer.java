@@ -1,4 +1,4 @@
-package net.imworld.performance_tunning.multithreading;
+package net.imworld.performance_tuning.multithreading;
 
 import java.io.BufferedReader;
 import java.nio.charset.Charset;
@@ -19,8 +19,8 @@ import com.datastax.driver.core.Cluster;
 import com.datastax.driver.core.Session;
 import com.datastax.driver.core.utils.UUIDs;
 
-import net.imworld.performance_tunning.util.DataUtil;
-import net.imworld.performance_tunning.util.DbUtil;
+import net.imworld.performance_tuning.util.DataUtil;
+import net.imworld.performance_tuning.util.DbUtil;
 
 public class FileImportMultithreadedStringBuffer {
 

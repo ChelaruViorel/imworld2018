@@ -1,4 +1,4 @@
-package net.imworld.performance_tunning.util;
+package net.imworld.performance_tuning.util;
 
 import java.io.FileWriter;
 import java.io.IOException;

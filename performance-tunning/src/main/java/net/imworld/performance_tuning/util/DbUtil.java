@@ -1,4 +1,4 @@
-package net.imworld.performance_tunning.util;
+package net.imworld.performance_tuning.util;
 
 import java.net.InetSocketAddress;
 import java.util.Arrays;

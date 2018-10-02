@@ -1,4 +1,4 @@
-package net.imworld.performance_tunning;
+package net.imworld.performance_tuning;
 
 public class Main 
 {
