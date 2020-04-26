@@ -1,4 +1,4 @@
 # IMWorld 2018
 Code example for the talk "Performance tuning" that I presented at IMWorld 2018 conference, the Java Stage in Bucharest, Romania.
 
-[The presentation slides](Towards performance tuning mindset.pdf)
+[The presentation slides](https://github.com/ChelaruViorel/imworld2018/blob/master/Towards%20performance%20tuning%20mindset.pdf)
